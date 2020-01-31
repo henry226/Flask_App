@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Home Page</title>
+    </head>
+    <body>
+        <h1>Home Page!</h1>
+        {% for x in range(10) %}
+            {% if x % 2 == 1 %}
+                <p style="color: red">{{ x }}</p>
+            {% else %}
+                <p style="color: green">{{ x }}</p>
+            {% endif %}
+        {% endfor %}
+    </body>
+</html>
